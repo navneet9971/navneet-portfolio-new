@@ -132,7 +132,7 @@ export const workExperience = [
   {
     id: 1,
     companyName : "AiCansell Pvt. Ltd.",
-    date : "April-2023 - Present",
+    date : "April-2024 - Present",
     title: " Software Developer",
     desc: " At AiCansell, I developed a product featuring two panels: User and Admin, also managed another projects at Learning Lens.This platform focused on training workers and employees, offering CRM, Users, and Kiosk web applications.Working alongside a team of two, we ensured the smooth functioning of the application, which is utilized internationally.The project involved intricate problem-solving, particularly in resolving data-related issues from the backend to optimize site performance.",
   },
