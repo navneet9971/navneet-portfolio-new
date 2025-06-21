@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { navItems } from '../data/data';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNavClick = (e, link) => {
+    // If it's a page link (starts with /), let Next.js handle it
+    if (link.startsWith('/')) {
+      return; // Don't prevent default, let the link work normally
+    }
+    
+    // If it's a hash link, handle smooth scrolling
     e.preventDefault();
     const targetId = link.substring(1); // Remove the # from the link
     const targetElement = document.getElementById(targetId);
@@ -23,6 +30,36 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const renderNavItem = (item, index) => {
+    // If it's a page link, use Next.js Link
+    if (item.link.startsWith('/')) {
+      return (
+        <Link 
+          key={index}
+          href={item.link}
+          className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group cursor-pointer"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          {item.name}
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+      );
+    }
+    
+    // If it's a hash link, use regular anchor
+    return (
+      <a 
+        key={index}
+        href={item.link} 
+        onClick={(e) => handleNavClick(e, item.link)}
+        className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group cursor-pointer"
+      >
+        {item.name}
+        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    );
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
       <div className="container mx-auto px-4 py-4">
@@ -33,17 +70,7 @@ const Navbar = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item, index) => (
-              <a 
-                key={index}
-                href={item.link} 
-                onClick={(e) => handleNavClick(e, item.link)}
-                className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium relative group cursor-pointer"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            ))}
+            {navItems.map((item, index) => renderNavItem(item, index))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -65,16 +92,30 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
             <div className="flex flex-col space-y-4 pt-4">
-              {navItems.map((item, index) => (
-                <a 
-                  key={index}
-                  href={item.link} 
-                  onClick={(e) => handleNavClick(e, item.link)}
-                  className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium cursor-pointer"
-                >
-                  {item.name}
-                </a>
-              ))}
+              {navItems.map((item, index) => {
+                if (item.link.startsWith('/')) {
+                  return (
+                    <Link 
+                      key={index}
+                      href={item.link}
+                      className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium cursor-pointer"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                }
+                return (
+                  <a 
+                    key={index}
+                    href={item.link} 
+                    onClick={(e) => handleNavClick(e, item.link)}
+                    className="text-gray-300 hover:text-blue-400 transition-colors duration-300 font-medium cursor-pointer"
+                  >
+                    {item.name}
+                  </a>
+                );
+              })}
             </div>
           </div>
         )}

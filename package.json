@@ -10,6 +10,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",
     "framer-motion": "^10.12.16",
     "lucide-react": "^0.518.0",
