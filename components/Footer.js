@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialMedia } from '../data/data';
+import { socialMedia, footerLinks } from '../data/data';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -58,13 +58,7 @@ const Footer = () => {
               <div className="h-1 w-12 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto sm:mx-0 lg:mx-0 rounded-full"></div>
             </div>
             <ul className="mt-6 space-y-3">
-              {[
-                { href: "#about", label: "About Me" },
-                { href: "#projects", label: "Projects" },
-                { href: "#experince", label: "Experience" },
-                { href: "#myskills", label: "Skills" },
-                { href: "#contact", label: "Contact" }
-              ].map((link, index) => (
+              {footerLinks.slice(0, 5).map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
@@ -122,12 +116,15 @@ const Footer = () => {
               © {currentYear} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-semibold">Navneet</span>. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-sm hover:underline">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm hover:underline">
-                Terms of Service
-              </a>
+              {footerLinks.slice(5).map((link, index) => (
+                <a 
+                  key={index}
+                  href={link.href} 
+                  className={`text-gray-400 hover:text-${index === 0 ? 'blue' : 'purple'}-400 transition-colors text-sm hover:underline`}
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
         </div>

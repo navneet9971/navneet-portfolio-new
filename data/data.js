@@ -240,3 +240,13 @@ export const skills = [
   }
 ];
 
+export const footerLinks = [
+  { href: "#about", label: "About Me" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+  { href: "#myskills", label: "Skills" },
+  { href: "#contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-of-service", label: "Terms of Service" }
+];
+
