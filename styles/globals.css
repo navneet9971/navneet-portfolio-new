@@ -127,6 +127,16 @@ body {
   background: linear-gradient(to bottom, #2563eb, #7c3aed);
 }
 
+/* Hide scrollbar for mobile horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
 /* Glass morphism effect */
 .glass {
   background: rgba(31, 41, 55, 0.7);

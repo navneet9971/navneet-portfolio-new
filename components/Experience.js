@@ -14,7 +14,8 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        {/* Desktop Timeline Design (lg and above) */}
+        <div className="hidden lg:block max-w-4xl mx-auto">
           {workExperience.map((exp, index) => (
             <div key={exp.id} className="relative">
               {/* Timeline Line */}
@@ -120,9 +121,118 @@ const Experience = () => {
           ))}
         </div>
 
+        {/* Mobile Card Design (sm to lg) */}
+        <div className="lg:hidden space-y-4">
+          {workExperience.map((exp, index) => (
+            <div key={exp.id} className="relative">
+              {/* Experience Number Badge */}
+              <div className="absolute -top-2 -left-2 z-20">
+                <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xs shadow-lg border-2 border-gray-900">
+                  {exp.id}
+                </div>
+              </div>
+
+              {/* Main Experience Card */}
+              <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-4 rounded-xl border border-gray-700/50 shadow-xl">
+                {/* Header Section */}
+                <div className="mb-3">
+                  <div className="flex flex-col space-y-2 mb-2">
+                    <h3 className="text-lg font-bold text-white leading-tight">
+                      {exp.title}
+                    </h3>
+                    <div className="flex-shrink-0">
+                      <span className="px-2 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-full text-blue-400 text-xs font-medium">
+                        {exp.date}
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <h4 className="text-base text-blue-400 font-semibold mb-2">
+                    {exp.companyName}
+                  </h4>
+                </div>
+
+                {/* Description */}
+                <div className="mb-4">
+                  <p className="text-gray-300 text-xs leading-relaxed">
+                    {exp.desc}
+                  </p>
+                </div>
+
+                {/* Highlights Grid */}
+                <div className="grid grid-cols-1 gap-2">
+                  {exp.id === 1 && (
+                    <>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">User & Admin Panels</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">International Deployment</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">CRM & Kiosk Apps</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Performance Optimization</span>
+                      </div>
+                    </>
+                  )}
+                  
+                  {exp.id === 2 && (
+                    <>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Project Management</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Material UI & CSS</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Framer Motion</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Database Integration</span>
+                      </div>
+                    </>
+                  )}
+                  
+                  {exp.id === 3 && (
+                    <>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">API Integration</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Postman & Tools</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-purple-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Client Product</span>
+                      </div>
+                      <div className="flex items-center space-x-2 bg-gray-700/30 rounded-lg p-2">
+                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full flex-shrink-0"></div>
+                        <span className="text-gray-300 text-xs">Full-time Position</span>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* Experience Summary */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-8 max-w-3xl mx-auto">
+          {/* Desktop Summary Design */}
+          <div className="hidden lg:block bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Ready for the Next Challenge
             </h3>
@@ -141,6 +251,34 @@ const Experience = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-pink-400 mb-2">10+</div>
                 <div className="text-gray-400">Projects Delivered</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Summary Design */}
+          <div className="lg:hidden">
+            <div className="bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 border border-blue-500/20 rounded-xl p-4 mx-2 shadow-xl">
+              <h3 className="text-lg font-bold mb-2 text-white">
+                Ready for the Next Challenge
+              </h3>
+              <p className="text-gray-300 text-xs mb-4 leading-relaxed">
+                With years of experience in full-stack development, I'm always eager to take on new projects and technologies.
+              </p>
+              
+              {/* Mobile Stats Grid */}
+              <div className="grid grid-cols-3 gap-2">
+                <div className="text-center bg-gray-800/50 rounded-lg p-3 border border-gray-700/50">
+                  <div className="text-lg font-bold text-blue-400 mb-1">3+</div>
+                  <div className="text-gray-400 text-xs">Companies</div>
+                </div>
+                <div className="text-center bg-gray-800/50 rounded-lg p-3 border border-gray-700/50">
+                  <div className="text-lg font-bold text-purple-400 mb-1">3+</div>
+                  <div className="text-gray-400 text-xs">Years Experience</div>
+                </div>
+                <div className="text-center bg-gray-800/50 rounded-lg p-3 border border-gray-700/50">
+                  <div className="text-lg font-bold text-pink-400 mb-1">10+</div>
+                  <div className="text-gray-400 text-xs">Projects Delivered</div>
+                </div>
               </div>
             </div>
           </div>
