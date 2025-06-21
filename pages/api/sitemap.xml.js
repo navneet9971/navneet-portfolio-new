@@ -1,4 +1,4 @@
-const SITE_URL = 'https://navneet-portfolio.vercel.app'
+const SITE_URL = 'https://navneet-portfolio-black.vercel.app/'
 
 export default function handler(req, res) {
   const currentDate = new Date().toISOString().split('T')[0]

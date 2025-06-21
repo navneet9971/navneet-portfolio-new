@@ -250,7 +250,7 @@ const Experience = () => {
         {/* Experience Summary */}
         <div className="text-center mt-16">
           {/* Desktop Summary Design */}
-          <div className="hidden lg:block bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-8 max-w-3xl mx-auto">
+          {/* <div className="hidden lg:block bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Ready for the Next Challenge
             </h3>
@@ -277,7 +277,7 @@ const Experience = () => {
                 <div className="text-gray-400">Projects Delivered</div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Mobile Summary Design */}
           <div className="lg:hidden">
