@@ -23,11 +23,14 @@ export const gridItems = [
     title: "My tech stack",
     description: "I constantly try to improve",
   },
-
+  {
+    id: 4,
+    title: "Passionate about continuous learning and growth",
+    description: "Always exploring new technologies and methodologies",
+  },
   {
     id: 5,
     title: "Exploring a new framework to broaden skills",
-    description: "The Inside Scoop",
   },
   {
     id: 6,

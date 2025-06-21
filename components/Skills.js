@@ -60,7 +60,7 @@ const Skills = () => {
             {Object.entries(skillCategories).map(([category, categorySkills], index) => (
               <div
                 key={category}
-                className="min-w-[280px] bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-700/50 flex-shrink-0"
+                className="min-w-[280px] justify-between flex-1 bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-700/50 flex-shrink-0 flex flex-col"
               >
                 <div className="flex items-center mb-4">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg mr-3 ${
@@ -74,21 +74,23 @@ const Skills = () => {
                   <h3 className="text-xl font-bold text-white">{category}</h3>
                 </div>
 
-                <div className="space-y-2">
-                  {categorySkills.map((skillName) => (
-                    <div
-                      key={skillName}
-                      className="flex items-center justify-between p-3 bg-gray-700/30 rounded-lg border border-gray-600/30"
-                    >
-                      <span className="text-gray-200 font-medium text-sm">
-                        {skillName}
-                      </span>
-                      <div className="flex items-center space-x-1">
-                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-gray-400">Pro</span>
+                <div className="space-y-2 flex-1 flex flex-col justify-between">
+                  <div className="space-y-2">
+                    {categorySkills.map((skillName) => (
+                      <div
+                        key={skillName}
+                        className="flex items-center justify-between p-3 bg-gray-700/30 rounded-lg border border-gray-600/30"
+                      >
+                        <span className="text-gray-200 font-medium text-sm">
+                          {skillName}
+                        </span>
+                        <div className="flex items-center space-x-1">
+                          <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-400">Pro</span>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -96,7 +98,7 @@ const Skills = () => {
         </div>
 
         {/* Desktop UI - Grid Layout - With Animation */}
-        <div className="hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        <div className="hidden lg:grid lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16 items-stretch">
           {Object.entries(skillCategories).map(([category, categorySkills], index) => (
             <ScrollAnimation 
               key={category}
@@ -104,9 +106,8 @@ const Skills = () => {
               delay={0.1 * (index + 1)}
               duration={0.6}
             >
-              <div
-                className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
-              >
+              <div className="h-full flex flex-col bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105">
+
                 <div className="flex items-center mb-6">
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white font-bold text-xl mr-4 ${
                     index === 0 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :

@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Head from 'next/head'
+import { useState } from 'react'
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -8,8 +9,14 @@ import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ProjectPopup from "../components/ProjectPopup";
 
 export default function Home() {
+  const [isProjectPopupOpen, setIsProjectPopupOpen] = useState(false);
+
+  const openProjectPopup = () => setIsProjectPopupOpen(true);
+  const closeProjectPopup = () => setIsProjectPopupOpen(false);
+
   return (
     <>
       <NextSeo
@@ -74,12 +81,13 @@ export default function Home() {
       <div className="bg-black text-white">
         <Navbar />
         <Hero />
-        <About />
+        <About onStartProject={openProjectPopup} />
         <Skills />
         <Projects />
         <Experience />
         <Contact />
         <Footer />
+        <ProjectPopup isOpen={isProjectPopupOpen} onClose={closeProjectPopup} />
       </div>
     </>
   );
