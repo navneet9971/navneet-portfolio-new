@@ -3,6 +3,7 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/": "pages/index.js",
-  "/all-projects": "pages/all-projects.js",
-  "/terms-of-service": "pages/terms-of-service.js"
+  "/terms-of-service": "pages/terms-of-service.js",
+  "/blog": "pages/blog.js",
+  "/blog/[slug]": "pages/blog/[slug].js"
 }

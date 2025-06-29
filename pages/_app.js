@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
+import { useGoogleAnalytics } from '../components/useGoogleAnalytics'
 
 const SEO_CONFIG = {
   title: 'Navneet Kumar - Full Stack Developer Portfolio',
@@ -59,6 +60,12 @@ const SEO_CONFIG = {
 }
 
 export default function App({ Component, pageProps }) {
+  // Initialize Google Analytics
+  useGoogleAnalytics()
+
+  // Get GA measurement ID from environment variable
+  const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_IDS || 'G-J5GZHCVZ5L'
+
   return (
     <>
       <Head>
@@ -66,6 +73,18 @@ export default function App({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://navneet-portfolio.vercel.app" />
+        
+        {/* Google Analytics 4 */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}');
+            `,
+          }}
+        />
         
         {/* Structured Data */}
         <script

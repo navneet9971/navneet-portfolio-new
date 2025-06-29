@@ -36,7 +36,7 @@ const CallScheduler = () => {
   const handleDirectCall = () => {
     // Replace this with your actual phone number
     // You can also use environment variable: process.env.NEXT_PUBLIC_MY_NUMBER
-    const phoneNumber = process.env.NEXT_PUBLIC_MY_NUMBER; // Change this to your phone number
+    const phoneNumber = process.env.MY_NUMBER; // Change this to your phone number
     window.open(`tel:${phoneNumber}`, '_self');
   };
 
