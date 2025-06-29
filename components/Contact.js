@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { socialMedia } from '../data/data';
 import ScrollAnimation from './ScrollAnimation';
+import CallScheduler from './CallScheduler';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -191,21 +192,7 @@ const Contact = () => {
         </div>
 
         {/* Call to Action */}
-        <ScrollAnimation direction="up" delay={0.5}>
-          <div className="text-center mt-8 sm:mt-12 md:mt-16">
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-xl p-4 sm:p-6 md:p-8 max-w-2xl mx-auto mx-4 sm:mx-auto">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 md:mb-4 text-white leading-tight">
-                Ready to Start Your Project?
-              </h3>
-              <p className="text-gray-300 mb-3 sm:mb-4 md:mb-6 text-xs sm:text-sm md:text-base px-1 sm:px-2 leading-relaxed">
-                Let's discuss how I can help bring your ideas to life with cutting-edge web development solutions.
-              </p>
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm md:text-base mx-auto min-h-[44px] sm:min-h-[48px] flex items-center justify-center">
-                Schedule a Call
-              </button>
-            </div>
-          </div>
-        </ScrollAnimation>
+        <CallScheduler />
       </div>
     </section>
   );

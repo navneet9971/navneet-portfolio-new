@@ -96,7 +96,49 @@ export const projects = [
     github: 'https://github.com/navneet9971/blog-frontend.git',
     perview: 'Live Preview',
     gitText: 'GitHub',
-  }  
+  },
+  {
+    id: 6,
+    title: "Pet Services Marketplace",
+    des: "A comprehensive digital platform connecting pet owners with vetted service providers including vets, groomers, walkers, and trainers. It features scheduling, secure payments, reviews, and pet health records.",
+    img: "/pet-service/paw-image.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mongodb.svg", "stripe", "aws", "google-maps"],
+    live: "https://www.pawpathcare.com/",
+    perview: "Live Preview",
+    note: "Freelance project developed in collaboration with a client to streamline pet care service bookings"
+  },  
+  {
+    id: 7,
+    title: "Luggage Services Platform",
+    des: "An innovative travel platform offering luggage pickup, secure storage, and delivery with real-time tracking and flight integration. Ideal for business travelers and tourists seeking hassle-free travel.",
+    img: "/luggage-services/lugage-image.jpg",
+    iconLists: ["/react.svg", "/react-native.svg", "/node.svg", "/mongodb.svg", "stripe", "google-maps", "firebase"],
+    live: "https://www.myluggagehub.com/", // Replace with actual live URL
+    perview: "Live Preview",
+    note: "Freelance project delivered while collaborating closely with a client"
+  },
+  {
+    id: 8,
+    title: "Wellness & Fitness Platform",
+    des: "A holistic wellness platform offering personalized workout plans, nutrition tracking, meditation, sleep analysis, and expert coaching — all integrated into one seamless health journey.",
+    img: "/wellness-fitnes-platform/fitness.jpg",
+    iconLists: ["/react-native.svg", "/node.svg", "/postgresql.svg", "tensorflow", "wearable-api", "aws"],
+    live: "https://www.pulseuphealth.com/", // Replace with actual live URL
+    perview: "Live Preview",
+    note: "Freelance project built in collaboration with a client to deliver a personalized health and fitness experience"
+  },
+  // {
+  //   id: 9,
+  //   title: "E-Commerce Partner Portal",
+  //   des: "A B2B platform connecting manufacturers and retailers with automated inventory, product catalog, order processing, and shipment tracking workflows — streamlining supply chain operations.",
+  //   img: "/images/portfolio/e-commerce-partner-portal/e-comm.jpg",
+  //   iconLists: ["/react.svg", "graphql", "/node.svg", "/postgresql.svg", "redis", "aws"],
+  //   live: "https://example.com/e-commerce-partner", // Replace with actual live URL
+  //   github: "https://github.com/yourrepo/ecommerce-partner-portal", // Replace with actual repo link
+  //   perview: "Live Preview",
+  //   gitText: "GitHub",
+  //   note: "Freelance project developed in close collaboration with a client to streamline B2B e-commerce operations"
+  // },
 ];
 
 export const testimonials = [

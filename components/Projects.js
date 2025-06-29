@@ -13,6 +13,9 @@ const Projects = () => {
     return name.charAt(0).toUpperCase() + name.slice(1).toUpperCase();
   };
 
+  // Get only first 3 projects
+  const featuredProjects = projects.slice(0, 3);
+
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black">
       <div className="container mx-auto px-4">
@@ -29,7 +32,7 @@ const Projects = () => {
 
         {/* Desktop Layout (lg and above) */}
         <div className="hidden lg:block space-y-16 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <ScrollAnimation 
               key={project.id} 
               direction={index % 2 === 0 ? 'left' : 'right'} 
@@ -128,7 +131,7 @@ const Projects = () => {
 
         {/* Mobile Layout (below lg) */}
         <div className="lg:hidden space-y-8 max-w-4xl mx-auto">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <ScrollAnimation 
               key={project.id} 
               direction="up" 
@@ -223,6 +226,37 @@ const Projects = () => {
             </ScrollAnimation>
           ))}
         </div>
+
+        {/* View All Projects Button */}
+        <ScrollAnimation direction="up" delay={0.3}>
+          <div className="text-center mt-16 sm:mt-20">
+            <div className="relative bg-gradient-to-r from-gray-800/50 via-gray-700/50 to-gray-800/50 border border-gray-600/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto backdrop-blur-xl overflow-hidden hover:border-blue-500/50 transition-all duration-500">
+              {/* Background decorative elements */}
+              <div className="absolute top-0 left-0 w-16 h-16 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-0 right-0 w-12 h-12 sm:w-20 sm:h-20 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full blur-2xl"></div>
+              
+              <div className="relative z-10 space-y-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                  Want to see more?
+                </h3>
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                  Explore my complete portfolio with search and filtering capabilities.
+                </p>
+                <div className="pt-2">
+                  <a 
+                    href="/all-projects"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-blue-500/25 text-sm sm:text-base"
+                  >
+                    View All Projects
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
 
         {/* Call to Action */}
         <ScrollAnimation direction="up" delay={0.4}>
