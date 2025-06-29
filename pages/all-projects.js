@@ -67,15 +67,15 @@ export default function AllProjects() {
       <NextSeo
         title="All Projects - Navneet Kumar | Full Stack Developer Portfolio"
         description="Explore all projects by Navneet Kumar - Full Stack Developer. View web applications, mobile apps, and innovative solutions built with React, Next.js, Node.js, and modern technologies."
-        canonical="https://navneet-portfolio.vercel.app/all-projects"
+        canonical="https://navi.reel-elevate.co.in/all-projects"
         openGraph={{
           title: 'All Projects - Navneet Kumar | Full Stack Developer Portfolio',
           description: 'Explore all projects by Navneet Kumar - Full Stack Developer. View web applications, mobile apps, and innovative solutions built with React, Next.js, Node.js, and modern technologies.',
-          url: 'https://navneet-portfolio.vercel.app/all-projects',
+          url: 'https://navi.reel-elevate.co.in/all-projects',
           siteName: 'Navneet Kumar Portfolio',
           images: [
             {
-              url: 'https://navneet-portfolio.vercel.app/og-image.png',
+              url: 'https://navi.reel-elevate.co.in/og-image.png',
               width: 1200,
               height: 630,
               alt: 'All Projects - Navneet Kumar Portfolio',
@@ -117,7 +117,7 @@ export default function AllProjects() {
               "@type": "CollectionPage",
               "name": "All Projects - Navneet Kumar",
               "description": "Complete collection of projects by Navneet Kumar, Full Stack Developer",
-              "url": "https://navneet-portfolio.vercel.app/all-projects",
+              "url": "https://navi.reel-elevate.co.in/all-projects",
               "mainEntity": {
                 "@type": "ItemList",
                 "itemListElement": projects.map((project, index) => ({

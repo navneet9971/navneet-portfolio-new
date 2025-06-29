@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://navneet-portfolio.vercel.app';
+const SITE_URL = 'https://navi.reel-elevate.co.in';
 const currentDate = new Date().toISOString().split('T')[0];
 
 // Define blog posts manually since we can't import ES6 modules in Node.js script

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://navneet-portfolio.vercel.app',
+  siteUrl: process.env.SITE_URL || 'https://navi.reel-elevate.co.in/',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
@@ -11,7 +11,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://navneet-portfolio.vercel.app/sitemap.xml',
+      'https://navi.reel-elevate.co.in//sitemap.xml',
     ],
   },
   exclude: ['/404', '/500'],

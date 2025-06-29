@@ -108,11 +108,11 @@ const PrivacyPolicy = () => {
       <NextSeo
         title="Privacy Policy - Navneet Kumar"
         description="Privacy Policy for Navneet Kumar's portfolio website. Learn how we collect, use, and protect your personal information."
-        canonical="https://navneet-portfolio.vercel.app/privacy-policy"
+        canonical="https://navi.reel-elevate.co.in/privacy-policy"
         openGraph={{
           title: 'Privacy Policy - Navneet Kumar',
           description: 'Privacy Policy for Navneet Kumar\'s portfolio website. Learn how we collect, use, and protect your personal information.',
-          url: 'https://navneet-portfolio.vercel.app/privacy-policy',
+          url: 'https://navi.reel-elevate.co.in/privacy-policy',
           siteName: 'Navneet Kumar Portfolio',
         }}
       />
@@ -125,7 +125,7 @@ const PrivacyPolicy = () => {
               "@type": "WebPage",
               "name": "Privacy Policy",
               "description": "Privacy Policy for Navneet Kumar's portfolio website",
-              "url": "https://navneet-portfolio.vercel.app/privacy-policy",
+              "url": "https://navi.reel-elevate.co.in/privacy-policy",
             })
           }}
         />

@@ -104,11 +104,11 @@ const TermsOfService = () => {
       <NextSeo
         title="Terms of Service - Navneet Kumar"
         description="Terms of Service for Navneet Kumar's portfolio website. Read about the terms and conditions for using our services."
-        canonical="https://navneet-portfolio.vercel.app/terms-of-service"
+        canonical="https://navi.reel-elevate.co.in/terms-of-service"
         openGraph={{
           title: 'Terms of Service - Navneet Kumar',
           description: 'Terms of Service for Navneet Kumar\'s portfolio website. Read about the terms and conditions for using our services.',
-          url: 'https://navneet-portfolio.vercel.app/terms-of-service',
+          url: 'https://navi.reel-elevate.co.in/terms-of-service',
           siteName: 'Navneet Kumar Portfolio',
         }}
       />
@@ -121,7 +121,7 @@ const TermsOfService = () => {
               "@type": "WebPage",
               "name": "Terms of Service",
               "description": "Terms of Service for Navneet Kumar's portfolio website",
-              "url": "https://navneet-portfolio.vercel.app/terms-of-service",
+              "url": "https://navi.reel-elevate.co.in/terms-of-service",
             })
           }}
         />

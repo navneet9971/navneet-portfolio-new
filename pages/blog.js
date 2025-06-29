@@ -11,11 +11,11 @@ export default function Blog() {
     "@type": "Blog",
     "name": "Navneet Kumar's Blog",
     "description": "Technical blogs on HTML, CSS, JavaScript, React, and web development by Navneet Kumar.",
-    "url": "https://navneet-portfolio.vercel.app/blog",
+    "url": "https://navi.reel-elevate.co.in/blog",
     "author": {
       "@type": "Person",
       "name": "Navneet Kumar",
-      "url": "https://navneet-portfolio.vercel.app"
+      "url": "https://navi.reel-elevate.co.in"
     },
     "publisher": {
       "@type": "Person",
@@ -31,8 +31,8 @@ export default function Blog() {
       },
       "datePublished": post.date,
       "dateModified": post.date,
-      "url": `https://navneet-portfolio.vercel.app/blog/${post.slug}`,
-      "image": `https://navneet-portfolio.vercel.app${post.image}`,
+      "url": `https://navi.reel-elevate.co.in/blog/${post.slug}`,
+      "image": `https://navi.reel-elevate.co.in${post.image}`,
       "keywords": post.tags.join(", ")
     }))
   };
@@ -49,20 +49,20 @@ export default function Blog() {
         <meta property="og:title" content="Blog - Web Development & Tech Insights | Navneet Kumar" />
         <meta property="og:description" content="Explore technical blogs on HTML, CSS, JavaScript, React, Node.js, and modern web development. Learn from practical examples and industry insights." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://navneet-portfolio.vercel.app/blog" />
-        <meta property="og:image" content="https://navneet-portfolio.vercel.app/blog.png" />
+        <meta property="og:url" content="https://navi.reel-elevate.co.in/blog" />
+        <meta property="og:image" content="https://navi.reel-elevate.co.in/blog.png" />
         <meta property="og:site_name" content="Navneet Kumar Portfolio" />
         
         {/* Twitter */}
         <meta name="twitter:title" content="Blog - Web Development & Tech Insights | Navneet Kumar" />
         <meta name="twitter:description" content="Explore technical blogs on HTML, CSS, JavaScript, React, Node.js, and modern web development." />
-        <meta name="twitter:image" content="https://navneet-portfolio.vercel.app/blog.png" />
+        <meta name="twitter:image" content="https://navi.reel-elevate.co.in/blog.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Navi9971" />
         <meta name="twitter:creator" content="@Navi9971" />
         
         {/* Canonical */}
-        <link rel="canonical" href="https://navneet-portfolio.vercel.app/blog" />
+        <link rel="canonical" href="https://navi.reel-elevate.co.in/blog" />
         
         {/* Structured Data */}
         <script

@@ -84,7 +84,7 @@ navneet-portfolio/
 The site is optimized for deployment on Vercel with automatic sitemap generation.
 
 ### Environment Variables
-- `SITE_URL`: Your production URL (defaults to https://navneet-portfolio.vercel.app)
+- `SITE_URL`: Your production URL (defaults to https://navi.reel-elevate.co.in)
 
 ## 📊 SEO Checklist
 
@@ -101,7 +101,7 @@ The site is optimized for deployment on Vercel with automatic sitemap generation
 
 ## 🔗 Links
 
-- **Live Site**: https://navneet-portfolio.vercel.app
+- **Live Site**: https://navi.reel-elevate.co.in/
 - **GitHub**: https://github.com/navneet9971
 - **LinkedIn**: https://www.linkedin.com/in/navneet-kumar-42b75b204/
 - **Twitter**: https://x.com/Navi9971

@@ -6,17 +6,17 @@ import { useGoogleAnalytics } from '../components/useGoogleAnalytics'
 const SEO_CONFIG = {
   title: 'Navneet Kumar - Full Stack Developer Portfolio',
   description: 'Professional portfolio of Navneet Kumar, a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View projects, experience, and skills.',
-  canonical: 'https://navneet-portfolio.vercel.app',
+  canonical: 'https://navi.reel-elevate.co.in',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://navneet-portfolio.vercel.app',
+    url: 'https://navi.reel-elevate.co.in',
     siteName: 'Navneet Kumar Portfolio',
     title: 'Navneet Kumar - Full Stack Developer Portfolio',
     description: 'Professional portfolio of Navneet Kumar, a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.',
     images: [
       {
-        url: 'https://navneet-portfolio.vercel.app/og-image.png',
+        url: 'https://navi.reel-elevate.co.in/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Navneet Kumar - Full Stack Developer',
@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <link rel="canonical" href="https://navneet-portfolio.vercel.app" />
+        <link rel="canonical" href="https://navi.reel-elevate.co.in" />
         
         {/* Google Analytics 4 */}
         <script
@@ -96,8 +96,8 @@ export default function App({ Component, pageProps }) {
               "name": "Navneet Kumar",
               "jobTitle": "Full Stack Developer",
               "description": "Professional Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
-              "url": "https://navneet-portfolio.vercel.app",
-              "image": "https://navneet-portfolio.vercel.app/profile-image.jpg",
+              "url": "https://navi.reel-elevate.co.in",
+              "image": "https://navi.reel-elevate.co.in/profile-image.jpg",
               "sameAs": [
                 "https://github.com/navneet9971",
                 "https://x.com/Navi9971",

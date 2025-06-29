@@ -16,7 +16,7 @@ const SEOHead = ({
   section,
   tags = []
 }) => {
-  const siteUrl = 'https://navneet-portfolio.vercel.app';
+  const siteUrl = 'https://navi.reel-elevate.co.in/';
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = ogImage ? `${siteUrl}${ogImage}` : `${siteUrl}/og-image.png`;
 

@@ -360,7 +360,7 @@ export const blogPosts = [
           &lt;meta property="og:title" content={post.title} /&gt;
           &lt;meta property="og:description" content={post.excerpt} /&gt;
             &lt;meta property="og:image" content={post.featuredImage} /&gt;
-          &lt;link rel="canonical" href={\`https://navneet-portfolio.vercel.app/blog/\${post.slug}\`} /&gt;
+          &lt;link rel="canonical" href={\`https://navi.reel-elevate.co.in//blog/\${post.slug}\`} /&gt;
         &lt;/Head&gt;
         &lt;div&gt;
           &lt;h1&gt;{post.title}&lt;/h1&gt;
@@ -377,7 +377,7 @@ export const blogPosts = [
   const withSitemap = require('next-sitemap');
   
   module.exports = withSitemap({
-    siteUrl: 'https://navneet-portfolio.vercel.app',
+    siteUrl: 'https://navi.reel-elevate.co.in/',
     generateRobotsTxt: true,
     sitemapSize: 7000,
     changefreq: 'daily',
@@ -385,7 +385,7 @@ export const blogPosts = [
     exclude: ['/admin/*'],
     robotsTxtOptions: {
       additionalSitemaps: [
-        'https://navneet-portfolio.vercel.app/sitemap.xml',
+        'https://navi.reel-elevate.co.in//sitemap.xml',
       ],
     },
   });</code></pre>
@@ -441,7 +441,7 @@ export async function getStaticPaths() {
   &lt;meta property="og:title" content={post.title} /&gt;
   &lt;meta property="og:description" content={post.excerpt} /&gt;
   &lt;meta property="og:image" content={post.featuredImage} /&gt;
-  &lt;meta property="og:url" content={\`https://navneet-portfolio.vercel.app/blog/\${post.slug}\`} /&gt;
+  &lt;meta property="og:url" content={\`https://navi.reel-elevate.co.in//blog/\${post.slug}\`} /&gt;
   &lt;meta property="og:site_name" content="My Blog" /&gt;
   
   {/* Twitter */}
@@ -517,19 +517,19 @@ export default function App({ Component, pageProps }) {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://navneet-portfolio.vercel.app"
+      "item": "https://navi.reel-elevate.co.in/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://navneet-portfolio.vercel.app/blog"
+      "item": "https://navi.reel-elevate.co.in//blog"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": post.title,
-        "item": \`https://navneet-portfolio.vercel.app/blog/\${post.slug}\`
+        "item": \`https://navi.reel-elevate.co.in//blog/\${post.slug}\`
     }
   ]
 };</code></pre>

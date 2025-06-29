@@ -44,11 +44,11 @@ export default function Document() {
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Navneet Kumar Portfolio",
-              "url": "https://navneet-portfolio.vercel.app",
+              "url": "https://navi.reel-elevate.co.in",
               "description": "Professional portfolio of Navneet Kumar, a Full Stack Developer",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://navneet-portfolio.vercel.app/search?q={search_term_string}",
+                "target": "https://navi.reel-elevate.co.in/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })

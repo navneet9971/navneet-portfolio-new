@@ -52,23 +52,23 @@ export default function BlogPost({ post }) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.summary,
-    "image": `https://navneet-portfolio.vercel.app${post.image}`,
+    "image": `https://navi.reel-elevate.co.in${post.image}`,
     "author": {
       "@type": "Person",
       "name": post.author,
-      "url": "https://navneet-portfolio.vercel.app"
+      "url": "https://navi.reel-elevate.co.in"
     },
     "publisher": {
       "@type": "Person",
       "name": "Navneet Kumar",
-      "url": "https://navneet-portfolio.vercel.app"
+      "url": "https://navi.reel-elevate.co.in"
     },
     "datePublished": post.date,
     "dateModified": post.date,
-    "url": `https://navneet-portfolio.vercel.app/blog/${post.slug}`,
+    "url": `https://navi.reel-elevate.co.in/blog/${post.slug}`,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://navneet-portfolio.vercel.app/blog/${post.slug}`
+      "@id": `https://navi.reel-elevate.co.in/blog/${post.slug}`
     },
     "keywords": post.tags.join(", "),
     "articleSection": "Web Development",
@@ -84,19 +84,19 @@ export default function BlogPost({ post }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://navneet-portfolio.vercel.app"
+        "item": "https://navi.reel-elevate.co.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://navneet-portfolio.vercel.app/blog"
+        "item": "https://navi.reel-elevate.co.in/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://navneet-portfolio.vercel.app/blog/${post.slug}`
+        "item": `https://navi.reel-elevate.co.in/blog/${post.slug}`
       }
     ]
   };
@@ -118,8 +118,8 @@ export default function BlogPost({ post }) {
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.summary} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://navneet-portfolio.vercel.app/blog/${post.slug}`} />
-        <meta property="og:image" content={`https://navneet-portfolio.vercel.app${post.image}`} />
+        <meta property="og:url" content={`https://navi.reel-elevate.co.in/blog/${post.slug}`} />
+        <meta property="og:image" content={`https://navi.reel-elevate.co.in${post.image}`} />
         <meta property="og:site_name" content="Navneet Kumar Portfolio" />
         <meta property="article:author" content={post.author} />
         <meta property="article:published_time" content={post.date} />
@@ -130,13 +130,13 @@ export default function BlogPost({ post }) {
         {/* Twitter */}
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.summary} />
-        <meta name="twitter:image" content={`https://navneet-portfolio.vercel.app${post.image}`} />
+        <meta name="twitter:image" content={`https://navi.reel-elevate.co.in${post.image}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Navi9971" />
         <meta name="twitter:creator" content="@Navi9971" />
         
         {/* Canonical */}
-        <link rel="canonical" href={`https://navneet-portfolio.vercel.app/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://navi.reel-elevate.co.in/blog/${post.slug}`} />
         
         {/* Structured Data */}
         <script

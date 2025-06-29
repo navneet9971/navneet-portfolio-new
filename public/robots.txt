@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://navneet-portfolio.vercel.app/sitemap.xml
+Sitemap: https://navi.reel-elevate.co.in/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

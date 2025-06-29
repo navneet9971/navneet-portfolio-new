@@ -22,15 +22,15 @@ export default function Home() {
       <NextSeo
         title="Navneet Kumar - Full Stack Developer Portfolio | React, Next.js, Node.js Expert"
         description="Professional Full Stack Developer portfolio of Navneet Kumar. Specializing in React, Next.js, Node.js, MongoDB, and modern web technologies. View projects, experience, skills, and get in touch for collaboration."
-        canonical="https://navneet-portfolio.vercel.app"
+        canonical="https://navi.reel-elevate.co.in"
         openGraph={{
           title: 'Navneet Kumar - Full Stack Developer Portfolio | React, Next.js, Node.js Expert',
           description: 'Professional Full Stack Developer portfolio of Navneet Kumar. Specializing in React, Next.js, Node.js, MongoDB, and modern web technologies.',
-          url: 'https://navneet-portfolio.vercel.app',
+          url: 'https://navi.reel-elevate.co.in',
           siteName: 'Navneet Kumar Portfolio',
           images: [
             {
-              url: 'https://navneet-portfolio.vercel.app/og-image.png',
+              url: 'https://navi.reel-elevate.co.in/og-image.png',
               width: 1200,
               height: 630,
               alt: 'Navneet Kumar - Full Stack Developer Portfolio',
@@ -95,14 +95,14 @@ export default function Home() {
               "@type": "WebPage",
               "name": "Navneet Kumar Portfolio",
               "description": "Professional portfolio of Navneet Kumar, a Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
-              "url": "https://navneet-portfolio.vercel.app",
+              "url": "https://navi.reel-elevate.co.in",
               "mainEntity": {
                 "@type": "Person",
                 "name": "Navneet Kumar",
                 "jobTitle": "Full Stack Developer",
                 "description": "Professional Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
-                "url": "https://navneet-portfolio.vercel.app",
-                "image": "https://navneet-portfolio.vercel.app/profile-image.jpg",
+                "url": "https://navi.reel-elevate.co.in",
+                "image": "https://navi.reel-elevate.co.in/profile-image.jpg",
                 "sameAs": [
                   "https://github.com/navneet9971",
                   "https://x.com/Navi9971",
@@ -142,7 +142,7 @@ export default function Home() {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://navneet-portfolio.vercel.app"
+                    "item": "https://navi.reel-elevate.co.in"
                   }
                 ]
               }
