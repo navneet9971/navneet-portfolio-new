@@ -1,6 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
+  { name: "Products", link: "/products" },
   { name: "Experience", link: "#experience" },
   { name: "Skills", link: "#myskills" },
   { name: "Blog", link: "/blog" },
@@ -196,6 +197,137 @@ export const workExperience = [
     title: "Frontend Developer",
     desc: "Developed and maintained user-facing features using modern frontend technologies. Upon completing my internship at eikomp, I secured a full-time position.The product I developed is being utilized by the company's clientele.During this period, I developed proficiency in API usage and became acquainted with various tools such as Postman, npm,and yarn, while utilizing multiple libraries",
   },
+];
+
+export const products = [
+  {
+    id: 1,
+    name: "Premium Web Development Course",
+    description: "Master modern web development with this comprehensive course covering React, Next.js, Node.js, and more. Perfect for beginners and intermediate developers.",
+    price: 99.99,
+    originalPrice: 149.99,
+    image: "/products/web-dev-course.jpg",
+    category: "Courses",
+    features: [
+      "50+ hours of video content",
+      "Real-world projects",
+      "Lifetime access",
+      "Certificate of completion",
+      "24/7 support"
+    ],
+    rating: 4.8,
+    reviews: 127,
+    inStock: true,
+    bestSeller: true
+  },
+  {
+    id: 2,
+    name: "Custom Portfolio Template",
+    description: "Professional portfolio template built with Next.js and Tailwind CSS. Fully responsive and customizable for developers and designers.",
+    price: 29.99,
+    originalPrice: 49.99,
+    image: "/products/portfolio-template.jpg",
+    category: "Templates",
+    features: [
+      "Fully responsive design",
+      "Dark/Light mode",
+      "SEO optimized",
+      "Contact form integration",
+      "Blog functionality"
+    ],
+    rating: 4.9,
+    reviews: 89,
+    inStock: true,
+    bestSeller: false
+  },
+  {
+    id: 3,
+    name: "E-commerce Starter Kit",
+    description: "Complete e-commerce solution with payment integration, inventory management, and admin dashboard. Built with modern technologies.",
+    price: 199.99,
+    originalPrice: 299.99,
+    image: "/products/ecommerce-kit.jpg",
+    category: "Starter Kits",
+    features: [
+      "Stripe payment integration",
+      "Admin dashboard",
+      "Inventory management",
+      "Order tracking",
+      "Email notifications"
+    ],
+    rating: 4.7,
+    reviews: 156,
+    inStock: true,
+    bestSeller: true
+  },
+  {
+    id: 4,
+    name: "UI Component Library",
+    description: "Beautiful and accessible React component library with 50+ pre-built components. Perfect for building modern web applications.",
+    price: 49.99,
+    originalPrice: 79.99,
+    image: "/products/ui-library.jpg",
+    category: "Libraries",
+    features: [
+      "50+ components",
+      "TypeScript support",
+      "Accessibility compliant",
+      "Customizable themes",
+      "Documentation included"
+    ],
+    rating: 4.6,
+    reviews: 203,
+    inStock: true,
+    bestSeller: false
+  },
+  {
+    id: 5,
+    name: "API Development Course",
+    description: "Learn to build robust REST APIs and GraphQL services with Node.js, Express, and MongoDB. Includes authentication and deployment.",
+    price: 79.99,
+    originalPrice: 119.99,
+    image: "/products/api-course.jpg",
+    category: "Courses",
+    features: [
+      "REST & GraphQL APIs",
+      "Authentication & Authorization",
+      "Database design",
+      "Testing strategies",
+      "Deployment guides"
+    ],
+    rating: 4.8,
+    reviews: 94,
+    inStock: true,
+    bestSeller: false
+  },
+  {
+    id: 6,
+    name: "Mobile App Template",
+    description: "React Native template with navigation, state management, and common mobile app features. Ready for production deployment.",
+    price: 39.99,
+    originalPrice: 69.99,
+    image: "/products/mobile-template.jpg",
+    category: "Templates",
+    features: [
+      "React Native setup",
+      "Navigation system",
+      "State management",
+      "Push notifications",
+      "App store ready"
+    ],
+    rating: 4.5,
+    reviews: 67,
+    inStock: true,
+    bestSeller: false
+  }
+];
+
+export const productCategories = [
+  "All",
+  "Courses",
+  "Templates", 
+  "Starter Kits",
+  "Libraries"
 ];
 
 export const socialMedia = [
