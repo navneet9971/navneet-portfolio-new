@@ -61,8 +61,11 @@ const Hero = () => {
           >
             View My Work
           </button>
-          <button className="border border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 w-full sm:w-auto">
-            Download CV
+          <button 
+            onClick={() => window.open('/new-resume-2025.pdf', '_blank')}
+            className="border border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 w-full sm:w-auto"
+          >
+            Download Resume
           </button>
         </motion.div>
 

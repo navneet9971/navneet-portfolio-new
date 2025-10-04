@@ -42,31 +42,19 @@ export const gridItems = [
 ];
 
 export const projects = [
-
   {
     id: 1,
-    title: "Chrcha - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Charcha. Seamlessly connect with colleagues and friends.",
-    img: "/charcha.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    live: "https://char-cha.vercel.app/",
-    github: "https://github.com/navneet9971/zoom-clone-fullstack.git",
-    perview: "Live Perview",
-    gitText: "Github",
+    title: 'Nut-Square || Snacks Website',
+    des: 'A comprehensive snacks and nut products website offering premium quality products with easy online ordering, detailed product information, and seamless user experience for food enthusiasts.',
+    img: '/nut-square.png',
+    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/express.png', '/node.png', '/mongodb.svg'],
+    live: 'https://www.nutsquare.in/',
+    // github: 'https://github.com/navneet9971/drink-party-app.git',
+    perview: 'Live Preview',
+    // gitText: 'GitHub',
   },
   {
-    id:2,
-    title:"Money Tracker",
-    des: "Logging daily expenses to better understand your spending patterns.",
-    img: "/tracker.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/express.png", "/node.png", "/mongodb.svg"],
-    live: "https://money-tracker-adv.vercel.app/",
-    github: "https://github.com/navneet9971/money-tracker-adv.git",
-    perview: "Live Perview",
-    gitText: "Github",
-  },
-  {
-    id: 3,
+    id: 2,
     title: 'Vibe Nova – Real-Time Personality Chat Rooms',
     des: 'Vibe Nova offers real-time public and private chat rooms where users can connect, converse, and take personality tests to understand themselves and others better. It helps users meet new friends based on personality insights and shared vibes.',
     img: '/vibe.png',
@@ -77,7 +65,29 @@ export const projects = [
     gitText: 'GitHub',
   },
   {
+    id: 3,
+    title:"Money Tracker",
+    des: "Logging daily expenses to better understand your spending patterns.",
+    img: "/tracker.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/express.png", "/node.png", "/mongodb.svg"],
+    live: "https://money-tracker-adv.vercel.app/",
+    github: "https://github.com/navneet9971/money-tracker-adv.git",
+    perview: "Live Perview",
+    gitText: "Github",
+  },
+  {
     id: 4,
+    title: "Chrcha - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Charcha. Seamlessly connect with colleagues and friends.",
+    img: "/charcha.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    live: "https://char-cha.vercel.app/",
+    github: "https://github.com/navneet9971/zoom-clone-fullstack.git",
+    perview: "Live Perview",
+    gitText: "Github",
+  },
+  {
+    id: 5,
     title: 'Reel Elevate – AI-Powered Video Reel Marketplace',
     des: 'Reel Elevate is a platform where users can browse and purchase pre-made AI-generated video reels. No login or signup is required. Users can download and monetize these reels across social media platforms.',
     img: '/reel.png',
@@ -88,7 +98,7 @@ export const projects = [
     gitText: 'GitHub',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Blogshamchar – Global News & Automated Blogging Hub',
     des: 'Blogshamchar delivers real-time news, global stories, lifestyle updates, and tech trends. It features an automated blogging system that checks Excel data every hour and publishes fresh content seamlessly.',
     img: '/blog.png',
@@ -99,7 +109,7 @@ export const projects = [
     gitText: 'GitHub',
   },
   {
-    id: 6,
+    id: 7,
     title: "Pet Services Marketplace",
     des: "A comprehensive digital platform connecting pet owners with vetted service providers including vets, groomers, walkers, and trainers. It features scheduling, secure payments, reviews, and pet health records.",
     img: "/pet-service/paw-image.jpg",
@@ -109,7 +119,7 @@ export const projects = [
     note: "Freelance project developed in collaboration with a client to streamline pet care service bookings"
   },  
   {
-    id: 7,
+    id: 8,
     title: "Luggage Services Platform",
     des: "An innovative travel platform offering luggage pickup, secure storage, and delivery with real-time tracking and flight integration. Ideal for business travelers and tourists seeking hassle-free travel.",
     img: "/luggage-services/lugage-image.jpg",
@@ -119,7 +129,7 @@ export const projects = [
     note: "Freelance project delivered while collaborating closely with a client"
   },
   {
-    id: 8,
+    id: 9,
     title: "Wellness & Fitness Platform",
     des: "A holistic wellness platform offering personalized workout plans, nutrition tracking, meditation, sleep analysis, and expert coaching — all integrated into one seamless health journey.",
     img: "/wellness-fitnes-platform/fitness.jpg",
@@ -178,22 +188,29 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
+    companyName : "ADS Enviro Pvt. Ltd.",
+    date : "April-2025 - Present",
+    title: " Software Developer",
+    desc: "At ADS Enviro Pvt. Ltd., I am currently working as a Software Developer, leading the development of innovative solutions including an AI-powered Job Portal and comprehensive CRM panel. I oversee multiple major projects, focusing on creating scalable web applications with modern technologies. My role involves full-stack development, implementing AI-driven features for candidate matching, and building robust CRM systems for client management. Working collaboratively with cross-functional teams, I ensure optimal performance and user experience across all platforms while maintaining high code quality and implementing best practices.",
+  },
+  {
+    id: 2,
     companyName : "AiCansell Pvt. Ltd.",
-    date : "April-2024 - Present",
+    date : "Feb-2024 - April-2025",
     title: " Software Developer",
     desc: " At AiCansell, I developed a product featuring two panels: User and Admin, also managed another projects at Learning Lens.This platform focused on training workers and employees, offering CRM, Users, and Kiosk web applications.Working alongside a team of two, we ensured the smooth functioning of the application, which is utilized internationally.The project involved intricate problem-solving, particularly in resolving data-related issues from the backend to optimize site performance.",
   },
   {
-    id: 2,
+    id: 3,
     companyName : " NetPuppys Pvt. Ltd",
-    date : "Oct-2023 - April-2024",
+    date : "March-2023 - Jan-2024",
     title: "Software Developer",
     desc: " Led the development of two distinct projects: Mpire, a dynamic website utilizing a database, and TIS, a school website.For Mpire, I oversaw project management responsibilities.In TIS, I implemented CSS and Material UI for styling, and incorporated Framer Motion to enhance the site with animations.",
   },
   {
-    id: 3,
+    id: 4,
     companyName : " Eikomp Pvt. Ltd.",
-    date : "Feb-2023 - Oct-2023",
+    date : "Feb-2022 - March -2023",
     title: "Frontend Developer",
     desc: "Developed and maintained user-facing features using modern frontend technologies. Upon completing my internship at eikomp, I secured a full-time position.The product I developed is being utilized by the company's clientele.During this period, I developed proficiency in API usage and became acquainted with various tools such as Postman, npm,and yarn, while utilizing multiple libraries",
   },
