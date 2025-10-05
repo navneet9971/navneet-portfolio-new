@@ -74,6 +74,11 @@ export default function App({ Component, pageProps }) {
         <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href="https://navi.reel-elevate.co.in" />
         
+        {/* Google Fonts - Gloria Hallelujah */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+        
         {/* Google Analytics 4 */}
         <script
           dangerouslySetInnerHTML={{

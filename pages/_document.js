@@ -24,6 +24,9 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
+        {/* Google Fonts */}
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Special+Elite&display=swap" rel="stylesheet" />
+        
         {/* DNS Prefetch for external resources */}
         <link rel="dns-prefetch" href="//github.com" />
         <link rel="dns-prefetch" href="//x.com" />
