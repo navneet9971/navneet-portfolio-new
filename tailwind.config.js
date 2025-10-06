@@ -6,9 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'gloria': ['"Gloria Hallelujah"', 'cursive'],
-        'special': ['"Special Elite"', 'system-ui'],
-        'sans': ['"Gloria Hallelujah"', '"Special Elite"', 'cursive', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
+        'handlee': ['"Handlee"', 'cursive'],
+        'sans': ['"Handlee"', 'cursive', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
       },
     },
   },
